@@ -8,28 +8,16 @@
 
 @layer utilities {
   .animate-marquee {
-    animation: marquee 30s linear infinite;
-  }
-
-  .animate-marquee2 {
-    animation: marquee2 30s linear infinite;
+    animation: marquee 10s linear infinite;
+    will-change: transform;
   }
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes marquee2 {
-  0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-200%);
+    transform: translateX(-50%);
   }
 }

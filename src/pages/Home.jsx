@@ -2,11 +2,10 @@
 
 import Navbar from "../components/Navbar1";
 
-export default function Dark() {
+export default function Home() {
   return (
     <div className="bg-white">
       <Navbar />
-
       <main className="relative isolate px-6 lg:px-8 ">
         <div
           aria-hidden="true"
