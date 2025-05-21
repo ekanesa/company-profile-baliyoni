@@ -10,7 +10,7 @@ import Partner from "../Home/Partner";
 
 import Footer from "../components/Footer";
 import GoogleMap from "../Home/GoogleMap";
-import BaliyoniCarousel from "../Home/Baliyonicarousel";
+import BaliyoniCarousel from "../Home/BaliyoniCarousel";
 
 export default function Homepage() {
   return (
