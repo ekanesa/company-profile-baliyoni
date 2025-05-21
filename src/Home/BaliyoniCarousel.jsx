@@ -3,50 +3,49 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const packages = [
-    {
-      label: "B",
-      title: "Berintegritas",
-      desc: "Karyawan Baliyoni Group Menjunjung Kejujuran dan Konsistensi Antara Ucapan dan Tindakan.",
-    },
-    {
-      label: "A",
-      title: "Adaptif",
-      desc: "Karyawan Baliyoni Group Fleksibel Terhadap Perubahan dan Kebutuhan Pelanggan.",
-    },
-    {
-      label: "L",
-      title: "Loyal",
-      desc: "Karyawan Baliyoni Group Setia Pada Tim dan Tujuan Bersama.",
-    },
-    {
-      label: "I",
-      title: "Inovatif",
-      desc: "Karyawan Baliyoni Group Selalu Mencari Cara Lebih Baik.",
-    },
-    {
-      label: "Y",
-      title: " Yasa",
-      desc: "Karyawan Baliyoni Group Melayani Sepenuh Hati Sebagai Bentuk Pengabdian yang Membawa Kehormatan dan Kemuliaan Hidup.",
-    },
-    {
-      label: "O",
-      title: " Optimis",
-      desc: "Karyawan Baliyoni Group Percaya Pada Peluang Di Setiap Tantangan dan Bersikap Positif Dalam Setiap Langkah.",
-    },
-    {
-      label: "N",
-      title: " Nyata",
-      desc: "Karyawan Baliyoni Group Fokus Pada Hasil yang Konkret, Terukur & Berdampak.",
-    },
-    {
-      label: "I",
-      title: "Intuitif",
-      desc: "Karyawan Baliyoni Group Peka Terhadap Peluang Bisnis & Kebutuhan Tanpa Menunggu Arahan.",
-    },
-  
+  {
+    label: "B",
+    title: "Berintegritas",
+    desc: "Karyawan Baliyoni Group Menjunjung Kejujuran dan Konsistensi Antara Ucapan dan Tindakan.",
+  },
+  {
+    label: "A",
+    title: "Adaptif",
+    desc: "Karyawan Baliyoni Group Fleksibel Terhadap Perubahan dan Kebutuhan Pelanggan.",
+  },
+  {
+    label: "L",
+    title: "Loyal",
+    desc: "Karyawan Baliyoni Group Setia Pada Tim dan Tujuan Bersama.",
+  },
+  {
+    label: "I",
+    title: "Inovatif",
+    desc: "Karyawan Baliyoni Group Selalu Mencari Cara Lebih Baik.",
+  },
+  {
+    label: "Y",
+    title: " Yasa",
+    desc: "Karyawan Baliyoni Group Melayani Sepenuh Hati Sebagai Bentuk Pengabdian yang Membawa Kehormatan dan Kemuliaan Hidup.",
+  },
+  {
+    label: "O",
+    title: " Optimis",
+    desc: "Karyawan Baliyoni Group Percaya Pada Peluang Di Setiap Tantangan dan Bersikap Positif Dalam Setiap Langkah.",
+  },
+  {
+    label: "N",
+    title: " Nyata",
+    desc: "Karyawan Baliyoni Group Fokus Pada Hasil yang Konkret, Terukur & Berdampak.",
+  },
+  {
+    label: "I",
+    title: "Intuitif",
+    desc: "Karyawan Baliyoni Group Peka Terhadap Peluang Bisnis & Kebutuhan Tanpa Menunggu Arahan.",
+  },
 ];
 
-export default function TelkomselCarousel() {
+export default function BaliyoniCarousel() {
   return (
     <section className="bg-gray-50 p-6 py-24">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
@@ -93,8 +92,10 @@ export default function TelkomselCarousel() {
                   <h3 className="text-xl font-bold text-red-600 mb-2">
                     {pkg.title}
                   </h3>
-                    <div className="flex justify-center pt-2 p-2">
-                      <span className="font-medium text-md text-black">{pkg.desc}</span>
+                  <div className="flex justify-center pt-2 p-2">
+                    <span className="font-medium text-md text-black">
+                      {pkg.desc}
+                    </span>
                   </div>
                 </div>
               </div>
