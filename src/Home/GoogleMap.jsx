@@ -2,7 +2,7 @@ import React from "react";
 
 export default function GoogleMap() {
   return (
-    <section className="mt-52 max-w-screen h-[650px] p-4 flex items-center justify-center">
+    <section className=" max-w-screen h-[650px] p-4 flex items-center justify-center">
       <div className="">
         <iframe
           title="location"
