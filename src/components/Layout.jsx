@@ -19,7 +19,7 @@ export default function Layout({ children }) {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-[#ff006a] opacity-10 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        <div className="max-w-screen py-32 sm:py-48 lg:py-56">{children}</div>
+        <div className="max-w-screen pt-32 sm:pt-48 lg:pt-56">{children}</div>
       </main>
       <Footer />
     </div>

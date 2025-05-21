@@ -1,7 +1,7 @@
 import React from "react";
 export default function Services() {
   return (
-    <section className="p-4 md:p-10">
+    <section className="px-6">
       <div className="relative overflow-hidden h-48 flex items-center bg-white">
         {/* Marquee track - satu div saja, berisi isi + duplikat */}
         <div className="flex animate-marquee whitespace-nowrap absolute left-0 top-1/2 transform -translate-y-1/2 w-max">

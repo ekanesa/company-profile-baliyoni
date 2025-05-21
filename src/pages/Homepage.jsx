@@ -10,6 +10,7 @@ import Partner from "../Home/Partner";
 
 import Footer from "../components/Footer";
 import GoogleMap from "../Home/GoogleMap";
+import BaliyoniCarousel from "../Home/Baliyonicarousel";
 
 export default function Homepage() {
   return (
@@ -216,7 +217,8 @@ export default function Homepage() {
         descService3="Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere totam eum rem..."
         btnService3="Learn more"
       />
-      <WhyChoose />
+      {/* <WhyChoose /> */}
+      <BaliyoniCarousel />
       <GoogleMap />
     </Layout>
   );
