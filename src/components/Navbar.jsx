@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Icon } from "@iconify/react";
 // Contoh data navigasi (bisa disesuaikan)
 const navigation = [
-  { name: "Home", href: "/Homepage" },
+  { name: "Home", href: "/" },
   { name: "About", href: "/About" },
   { name: "Services", href: "/Services" },
   { name: "Partnership", href: "/Partnership" },
