@@ -4,41 +4,49 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const packages = [
   {
+    index: 0,
     label: "B",
     title: "Berintegritas",
     desc: "Karyawan Baliyoni Group Menjunjung Kejujuran dan Konsistensi Antara Ucapan dan Tindakan.",
   },
   {
+    index: 1,
     label: "A",
     title: "Adaptif",
     desc: "Karyawan Baliyoni Group Fleksibel Terhadap Perubahan dan Kebutuhan Pelanggan.",
   },
   {
+    index: 2,
     label: "L",
     title: "Loyal",
     desc: "Karyawan Baliyoni Group Setia Pada Tim dan Tujuan Bersama.",
   },
   {
+    index: 3,
     label: "I",
     title: "Inovatif",
     desc: "Karyawan Baliyoni Group Selalu Mencari Cara Lebih Baik.",
   },
   {
+    index: 4,
     label: "Y",
     title: " Yasa",
     desc: "Karyawan Baliyoni Group Melayani Sepenuh Hati Sebagai Bentuk Pengabdian yang Membawa Kehormatan dan Kemuliaan Hidup.",
   },
   {
+    index: 5,
     label: "O",
     title: " Optimis",
     desc: "Karyawan Baliyoni Group Percaya Pada Peluang Di Setiap Tantangan dan Bersikap Positif Dalam Setiap Langkah.",
   },
   {
+    index: 6,
     label: "N",
     title: " Nyata",
     desc: "Karyawan Baliyoni Group Fokus Pada Hasil yang Konkret, Terukur & Berdampak.",
   },
   {
+    index: 7,
     label: "I",
     title: "Intuitif",
     desc: "Karyawan Baliyoni Group Peka Terhadap Peluang Bisnis & Kebutuhan Tanpa Menunggu Arahan.",
@@ -66,24 +74,24 @@ export default function BaliyoniCarousel() {
         </div>
 
         {/* Right section - Carousel */}
-        <div className="flex-1 max-w-4xl ">
+        <div className="flex-1 max-w-4xl">
           <Carousel
             showThumbs={false}
             showStatus={false}
             showIndicators={false}
-            infiniteLoop
-            centerMode
+            infiniteLoop={false}
+            centerMode="natural"
             centerSlidePercentage={30}
             emulateTouch
-            showArrows
+            showArrows={false}
             autoPlay
             axis="horizontal"
             swipeable
           >
-            {packages.map((pkg, index) => (
+            {packages.map((pkg) => (
               <div
-                key={index}
-                className="bg-white rounded-2xl mx-2 my-2 shadow-md flex flex-col w-60 h-80" // mx-2 dihapus
+                key={pkg.index}
+                className="bg-white rounded-2xl mx-2 my-2 shadow-md flex flex-col w-60 h-80"
               >
                 <div>
                   <div className="text-2xl text-white font-semibold bg-red-600 rounded-t-xl px-4 py-2 mb-4 h-16 flex items-center justify-center">
