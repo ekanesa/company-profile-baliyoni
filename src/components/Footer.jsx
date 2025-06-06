@@ -77,9 +77,6 @@ export default function Footer() {
                 </span>
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
               </p>
             </div>
             <div>

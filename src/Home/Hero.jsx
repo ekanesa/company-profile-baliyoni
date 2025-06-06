@@ -40,6 +40,7 @@ export default function Hero({ title, subtitle, sub, images }) {
             showThumbs={false}
             showStatus={false}
             showIndicators={false}
+            showArrows={false}
             interval={3000} // Set interval for auto change (3 seconds)
             transitionTime={500} // Set transition time (500ms)
           >
