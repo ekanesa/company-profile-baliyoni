@@ -7,19 +7,32 @@ import AboutUs from "../Home/AboutUs";
 import Services from "../Home/Services";
 import WhyChoose from "../Home/WhyChoose";
 import Partner from "../Home/Partner";
+import Karir from "../Home/Karir";
 
 import Footer from "../components/Footer";
 import GoogleMap from "../Home/GoogleMap";
 import BaliyoniCarousel from "../Home/BaliyoniCarousel";
 
 export default function Homepage() {
+  const images = [
+    // "../img/asus.png",
+    // "../img/acer.png",
+    // "../img/axioo.png",
+    // "../img/daikin.png",
+    // "../img/epson.png",
+    // "../img/hp.png",
+    "../img/bg1.png",
+    // "../img/savage.jpeg",
+    "../img/bg1.png",
+    "../img/bg1.png",
+  ];
   return (
     <Layout>
       <Hero
         title="BALIYONI GROUP"
         subtitle="One Stop Solution."
         sub="Solusi Tuntas, Bahagia Pantas."
-        image="/img/bg1.png"
+        images={images}
       />
       <AboutUs
         img1={
@@ -183,6 +196,7 @@ export default function Homepage() {
           </li>
         }
       />
+      <Karir/>
       <Services
         header="Layanan Kami"
         Sub="Baliyoni Saguna Group menawarkan beberapa layanan:"

@@ -1,10 +1,13 @@
 import React from "react";
 import BackgroundEffect from "./BackgroundEffect"; // Adjust the import path as necessary
+import { Carousel } from "react-responsive-carousel"; // Import Carousel component
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the required CSS
+
 
 // Hero.jsx
-export default function Hero({ title, subtitle, sub, image }) {
+export default function Hero({ title, subtitle, sub, images }) {
   return (
-    <section className="flex flex-col-reverse lg:flex-row items-center justify-center gap-12 mb-96 px-10">
+    <section className="flex flex-col-reverse lg:flex-row items-center justify-center gap-12 mb-[400px] px-10">
       <BackgroundEffect />
       <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
         <div className="text-center lg:text-left flex-1">
@@ -29,12 +32,28 @@ export default function Hero({ title, subtitle, sub, image }) {
             </a>
           </div>
         </div>
-        <div className="flex-1">
-          <img
-            src={image}
-            alt="Baliyoni Logo"
-            className="w-full max-w-[650px] mx-auto"
-          />
+        <div className="flex-1 flex justify-center items-center">
+          {/* Carousel Section */}
+          <Carousel
+            autoPlay
+            infiniteLoop
+            showThumbs={false}
+            showStatus={false}
+            showIndicators={false}
+            showArrows={false}
+            interval={3000} // Set interval for auto change (3 seconds)
+            transitionTime={500} // Set transition time (500ms)
+          >
+            {images.map((image, index) => (
+              <div key={index}>
+                <img
+                  src={image}
+                  alt={`carousel-image-${index}`}
+                  className="flex items-center w-full max-w-[650px] mx-auto"
+                />
+              </div>
+            ))}
+          </Carousel>
         </div>
       </div>
     </section>
