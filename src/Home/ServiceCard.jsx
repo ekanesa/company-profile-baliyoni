@@ -1,7 +1,21 @@
 import React from "react";
 
-
-export default function Services({header, Sub, img1, titleService1, descService1, btnService1, img2, titleService2, descService2, btnService2, img3, titleService3, descService3, btnService3}) {
+export default function ServiceCard({
+  header,
+  Sub,
+  img1,
+  titleService1,
+  descService1,
+  btnService1,
+  img2,
+  titleService2,
+  descService2,
+  btnService2,
+  img3,
+  titleService3,
+  descService3,
+  btnService3,
+}) {
   return (
     <section className="flex items-center justify-center">
       <div className="relative justify-center">

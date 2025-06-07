@@ -23,8 +23,13 @@ export default function About() {
       <Carousel />
       <AboutDesc />
       <Moto />
-        <Carousel />
-      <Vision />
+      <Carousel />
+      <Vision
+        header="Visi Kami."
+        text="Menjadi Perusahaan Penyedia Barang & Jasa Yang Terlengkap Di
+            Indonesia, Berbasis Edukasi, Inovasi & Layanan Purna Jual.
+"
+      />
       {/* <Vision /> */}
       {/* <Footer /> */}
     </LayoutAbout>

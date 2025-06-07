@@ -1,5 +1,5 @@
 import React from "react";
-export default function Vision() {
+export default function Vision({header, text}) {
   return (
     <section className="flex flex-col pb-24">
       <div className="flex flex-col lg:flex-row gap-0">
@@ -8,11 +8,10 @@ export default function Vision() {
         </div>
         <div className="flex-5 text-justify px-10 items-center">
           <h1 className="text-5xl font-bold pb-10 flex justify-center">
-            Visi Kami.
+            {header}
           </h1>
           <p className="pb-4 text-3xl flex justify-center text-center">
-            Menjadi Perusahaan Penyedia Barang & Jasa Yang Terlengkap Di
-            Indonesia, Berbasis Edukasi, Inovasi & Layanan Purna Jual.
+            {text}
           </p>
         </div>
         <div className="flex-1 justify-end">
