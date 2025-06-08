@@ -11,4 +11,4 @@ export default function LayoutServiceCentre({ children }) {
       <Footer />
     </div>
   );
-}
+}   

@@ -1,9 +1,10 @@
 import Partner from "../Home/Partner";
 
-export default function Footer() {
+export default function Footer({showPartner = true}) {
   return (
     <section>
-      <Partner />
+      {/* <Partner /> */}
+      {showPartner && <Partner />}
       <div className="bg-zinc-50 text-center text-surface/75 dark:bg-neutral-700 dark:text-white/75 lg:text-left">
         <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between">
           <div className="me-12 hidden lg:block">
@@ -69,31 +70,16 @@ export default function Footer() {
         </div>
 
         <div className="mx-6 py-10 text-center md:text-left">
-          <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
             <div className="">
               <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
                 <span className="w-52 p-2 bg-white">
                   <img src="../img/BYS_LOGO.png" alt="" />
                 </span>
               </h6>
-              <p>
-              </p>
+              <p></p>
             </div>
-            <div>
-              <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-                Layanan
-              </h6>
-              <p className="mb-4">
-                <a href="#!">Produk</a>
-              </p>
-              <p className="mb-4">
-                <a href="#!">Servis Perangkat Keras</a>
-              </p>
-              <p className="mb-4">
-                <a href="#!">Instalasi Jaringan</a>
-              </p>
-            </div>
-            <div>
+            {/* <div>
               <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
                 Useful links
               </h6>
@@ -109,10 +95,24 @@ export default function Footer() {
               <p>
                 <a href="#!">Help</a>
               </p>
+            </div> */}
+            <div>
+              <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                Layanan
+              </h6>
+              <p className="mb-4">
+                <a href="https://balimall.id/">Produk</a>
+              </p>
+              <p className="mb-4">
+                <a href="pages/ServiceCentre">Servis Perangkat Keras</a>
+              </p>
+              <p className="mb-4">
+                <a href="http://103.143.22.206/">Instalasi Jaringan</a>
+              </p>
             </div>
             <div>
               <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-                Contact
+                Kontak
               </h6>
               <p className="mb-4 flex items-center justify-center md:justify-start">
                 <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
@@ -138,7 +138,7 @@ export default function Footer() {
                     <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                   </svg>
                 </span>
-                info@example.com
+                info@baliyoni.co.id
               </p>
               <p className="mb-4 flex items-center justify-center md:justify-start">
                 <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
@@ -154,7 +154,7 @@ export default function Footer() {
                     />
                   </svg>
                 </span>
-                (0361) 257055
+                +6282272269888
               </p>
               <p className="flex items-center justify-center md:justify-start">
                 <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
@@ -170,14 +170,14 @@ export default function Footer() {
                     />
                   </svg>
                 </span>
-                0822 7226 9888
+                +6281138308697
               </p>
             </div>
           </div>
         </div>
 
         <div className="bg-black/5 p-6 text-center">
-          <span>© 2023 Copyright : </span>
+          <span>© 2025 Copyright : </span>
           <a className="font-semibold" href="https://tw-elements.com/">
             Baliyoni Group
           </a>

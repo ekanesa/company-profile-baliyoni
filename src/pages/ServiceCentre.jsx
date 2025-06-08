@@ -22,9 +22,14 @@ export default function ServiceCentre() {
         <Hero
           title={
             <span className="text-black">
-              Service <span className="text-red-500">Centre</span>
+              Layanan <span className="text-red-500">Servis</span>
             </span>
           }
+          // title={
+          //   <span className="text-black">
+          //     Service <span className="text-red-500">Centre</span>
+          //   </span>
+          // }
           subtitle={
             <span className="text-black text-[16px] text-justify space-y-0">
               Selain keunggulan kami dalam hal kualitas produk dan juga

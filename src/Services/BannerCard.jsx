@@ -25,7 +25,7 @@ return (
                 href={link}
                 className="mt-2 inline-block bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded text-sm"
             >
-                Check it out
+                Cek Selengkapnya
             </a>
         </div>
     </div>

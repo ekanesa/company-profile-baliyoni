@@ -37,14 +37,14 @@ export default function Homepage() {
           button={
             <div className="mt-10 flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-x-6 gap-y-4">
               <a
-                href="#"
-                className="rounded-md bg-red-500 px-4 py-3 text-sm font-semibold text-white shadow-md hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                href="https://baliyoni.com/"
+                className="rounded-md bg-red-500 px-4 py-3 text-2xl font-semibold text-white shadow-md hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Get started
+                {/* Get started */}Ayo Mulai
               </a>
-              <a href="#" className="text-sm font-semibold text-gray-900">
+              {/* <a href="#" className="text-sm font-semibold text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
-              </a>
+              </a> */}
             </div>
           }
         />

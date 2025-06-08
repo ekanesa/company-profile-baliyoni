@@ -4,6 +4,8 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Partnership from "./pages/Partnership";
 import ServiceCentre from "./pages/ServiceCentre";
+import ContactUs from "./pages/ContactUs";
+
 import Example from "./pages/Example";
 import { Icon } from "@iconify/react";
 
@@ -16,6 +18,7 @@ const App = () => {
         <Route path="/Services" element={<Services />} />
         <Route path="/Partnership" element={<Partnership />} />
         <Route path="/pages/ServiceCentre" element={<ServiceCentre />} />
+        <Route path="/pages/ContactUs" element={<ContactUs />} />
       </Routes>
     </Router>
   );
