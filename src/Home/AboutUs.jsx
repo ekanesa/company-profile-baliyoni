@@ -28,7 +28,7 @@ export default function AboutUs({
         <h2 className="text-2xl font-bold mb-4">{headerAbout}</h2>
         <p className="text-[12px] text-justify mb-4">{isiAbout}</p>
         <button className="bg-red-500 text-white text-sm px-4 py-2 rounded-md hover:bg-red-600">
-          Learn more
+          <a href="/About">Lebih Lanjut</a>
         </button>
       </div>
 

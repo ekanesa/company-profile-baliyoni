@@ -1,7 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
-import Home from "./pages/Home";
 import About from "./pages/About";
+import Services from "./pages/Services";
+import Partnership from "./pages/Partnership";
+import ServiceCentre from "./pages/ServiceCentre";
+import ContactUs from "./pages/ContactUs";
+
 import Example from "./pages/Example";
 import { Icon } from "@iconify/react";
 
@@ -11,8 +15,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Services" element={<Example />} />
-        <Route path="/Partnership" element={<Example />} />
+        <Route path="/Services" element={<Services />} />
+        <Route path="/Partnership" element={<Partnership />} />
+        <Route path="/pages/ServiceCentre" element={<ServiceCentre />} />
+        <Route path="/pages/ContactUs" element={<ContactUs />} />
       </Routes>
     </Router>
   );

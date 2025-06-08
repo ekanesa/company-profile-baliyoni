@@ -4,7 +4,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import Hero from "../Home/Hero";
 import AboutUs from "../Home/AboutUs";
-import Services from "../Home/Services";
+import Services from "../Home/ServiceCard";
 import WhyChoose from "../Home/WhyChoose";
 import Partner from "../Home/Partner";
 import Karir from "../Home/Karir";
@@ -28,12 +28,27 @@ export default function Homepage() {
   ];
   return (
     <Layout>
-      <Hero
-        title="BALIYONI GROUP"
-        subtitle="One Stop Solution."
-        sub="Solusi Tuntas, Bahagia Pantas."
-        images={images}
-      />
+      <div className="mb-[400px]">
+        <Hero
+          title="BALIYONI GROUP"
+          subtitle="One Stop Solution."
+          sub="Solusi Tuntas, Bahagia Pantas."
+          images={images}
+          button={
+            <div className="mt-10 flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-x-6 gap-y-4">
+              <a
+                href="https://baliyoni.com/"
+                className="rounded-md bg-red-500 px-4 py-3 text-2xl font-semibold text-white shadow-md hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                {/* Get started */}Ayo Mulai
+              </a>
+              {/* <a href="#" className="text-sm font-semibold text-gray-900">
+                Learn more <span aria-hidden="true">→</span>
+              </a> */}
+            </div>
+          }
+        />
+      </div>
       <AboutUs
         img1={
           <img
@@ -196,7 +211,7 @@ export default function Homepage() {
           </li>
         }
       />
-      <Karir/>
+      <Karir />
       <Services
         header="Layanan Kami"
         Sub="Baliyoni Saguna Group menawarkan beberapa layanan:"

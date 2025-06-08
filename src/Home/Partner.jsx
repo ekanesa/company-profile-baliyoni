@@ -1,5 +1,5 @@
 import React from "react";
-export default function Services() {
+export default function Partner() {
   return (
     <section className="px-6">
       <div className="relative overflow-hidden h-48 flex items-center bg-white">
@@ -46,7 +46,8 @@ export default function Services() {
         {/* Static title */}
         <div className="relative z-10 bg-white pr-5 py-5 text-4xl font-bold">
           <div className="flex items-center justify-start">
-            <p className="self-start">Partner Kami</p>
+            <p className="self-start">Mitra Kami</p>
+            {/* <p className="self-start">Partner Kami</p> */}
           </div>
         </div>
       </div>

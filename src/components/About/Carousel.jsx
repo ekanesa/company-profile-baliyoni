@@ -4,7 +4,11 @@ export default function Carousel() {
   // State untuk melacak gambar yang aktif
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const images = ["../img/BYS_LOGO.png", "../img/savage.jpeg"];
+  const images = [
+    "../img/mobile-service.jpg",
+     "../img/service 1.jpg",
+     "../img/jaringan.jpg",
+    ];
 
   // Fungsi untuk berpindah ke gambar berikutnya secara otomatis
   const nextImage = () => {
